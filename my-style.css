@@ -1,0 +1,50 @@
+/* 让页面居中、不无限拉伸 */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* 让图片自适应，不会撑破页面 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 导航栏放左边 */
+nav {
+  float: left;
+  width: 25%;
+  margin-right: 5%;
+}
+
+/* 信息栏放右边 */
+aside {
+  float: right;
+  width: 20%;
+}
+
+/* 正文放中间 */
+article {
+  float: left;
+  width: 50%;
+}
+
+/* 清除浮动，避免布局错乱 */
+body::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 表格样式 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
